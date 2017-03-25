@@ -3028,7 +3028,7 @@ static struct clk_lookup msm_clocks_8610[] = {
 	CLK_LOOKUP("cam_src_clk", mclk0_clk_src.c, "6-0034"),
 	CLK_LOOKUP("cam_src_clk", mclk0_clk_src.c, "6-007d"),
 	CLK_LOOKUP("cam_src_clk", mclk0_clk_src.c, "6-006d"),
-#ifdef CONFIG_MACH_SONY_SHUANG
+#ifndef CONFIG_MACH_SONY_SHUANG
 	CLK_LOOKUP("cam_src_clk", mclk1_clk_src.c, "6-0078"),
 	CLK_LOOKUP("cam_src_clk", mclk1_clk_src.c, "6-007a"),
 #else
@@ -3042,7 +3042,7 @@ static struct clk_lookup msm_clocks_8610[] = {
 	CLK_LOOKUP("cam_clk", mclk0_clk.c, "6-0034"),
 	CLK_LOOKUP("cam_clk", mclk0_clk.c, "6-007d"),
 	CLK_LOOKUP("cam_clk", mclk0_clk.c, "6-006d"),
-#ifdef CONFIG_MACH_SONY_SHUANG
+#ifndef CONFIG_MACH_SONY_SHUANG
 	CLK_LOOKUP("cam_clk", mclk1_clk.c, "6-0078"),
 	CLK_LOOKUP("cam_clk", mclk1_clk.c, "6-007a"),
 #else
